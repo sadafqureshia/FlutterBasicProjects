@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
 
-
 class LogInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
         color: Colors.white,
         child: Column(
-          children: [ 
+          children: [
             SizedBox(
               height: 35.0,
             ),
             Image.asset(
-              
               "assets/images/Login Image.png",
               height: 300,
               width: 200,
@@ -54,14 +52,17 @@ class LogInPage extends StatelessWidget {
                     ElevatedButton(
                       child: Text("Login"),
                       style: TextButton.styleFrom(),
-                      onPressed: (){
-                        print("HEllo this is me ");
+                      onPressed: () {
+                        print("Hello this is me ");
                       },
+                    ),
+                    ElevatedButton(
+                      child: Text("LogOut"),
+                      onPressed: () {},
                     )
                   ],
                 )),
           ],
-        )
-        );
+        ));
   }
 }
